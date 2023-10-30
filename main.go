@@ -21,7 +21,7 @@ func EjecutoLambda(ctx context.Context, event events.CognitoEventUserPoolsPostCo
 	awsgo.InicializoAWS()
 	
 	if !ValidoParametros() {
-		fmt.Println("Error en los par+ametros. Debe enviar 'SecretName'")
+		fmt.Println("Error en los parametros. Debe enviar 'SecretName'")
 		err := errors.New("Error en los paráametros. Debe enviar 'SecretName'")
 		return event, err
 	}
